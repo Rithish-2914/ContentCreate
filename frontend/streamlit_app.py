@@ -5,6 +5,11 @@ from typing import Dict, Any
 import plotly.graph_objects as go
 import plotly.express as px
 
+# In frontend/streamlit_app.py
+API_URL =https://content-create.vercel.app/ # ⬅️ PASTE YOUR BACKEND URL
+response = requests.post(API_URL, json=input_data, timeout=60)
+
+
 # Page config
 st.set_page_config(
     page_title="AI Video Production Assistant",
